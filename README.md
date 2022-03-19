@@ -1,2 +1,2 @@
 # ShChatAppServer
-a simple server with a socket
+a simple nodejs server with a socket
