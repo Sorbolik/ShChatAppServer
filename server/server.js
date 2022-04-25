@@ -14,7 +14,7 @@ const websocket = new WebSocketServer({
 })
 
 
-httpserver.listen(8080, () => console.log("My server is listening on port 8080"))
+httpserver.listen(8081, () => console.log("My server is listening on port 8081"))
 
 const requestListener = function (req, res) {
     res.setHeader("Content-type", "application/json")
@@ -26,8 +26,8 @@ const requestListener = function (req, res) {
     }))
 }
 const server = http.createServer(requestListener);
-server.listen(8080, 'localhost', () => {
-    console.log('server is running on http://localhost:8080');
+server.listen(8081, 'localhost', () => {
+    console.log('server is running on http://localhost:8081');
 })
 
 //when a legit websocket request comes listen to it and get the connection .. once you get a connection thats it! 
@@ -66,6 +66,6 @@ function sendevery5seconds() {
 
 
 //client code 
-//let ws = new WebSocket("ws://localhost:8080");
+//let ws = new WebSocket("ws://localhost:8081");
 //ws.onmessage = message => console.log(`Received: ${message.data}`);
 //ws.send("Hello! I'm client")
