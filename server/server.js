@@ -26,7 +26,7 @@ const requestListener = function (req, res) {
     }))
 }
 const server = http.createServer(requestListener);
-server.listen(8081, 'localhost', () => {
+server.listen(8081, '146.190.231.201', () => {
     console.log('server is running on http://localhost:8081');
 })
 
